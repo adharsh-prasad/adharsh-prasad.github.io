@@ -1,48 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adharsh Prasad Natesan</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* Intro Section */
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .intro-text {
+      max-width: 60%;
+    }
+
+    .intro-text h1 {
+      font-size: 2.5rem;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .intro-text p {
+      font-size: 1.2rem;
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .intro-image {
+      max-width: 35%;
+    }
+
+    .intro-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .intro-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .intro-text {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .intro-image {
+        max-width: 70%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Adharsh Prasad Natesan</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  
+  <!-- Intro Section -->
+  <div class="intro-section">
+    <div class="intro-text">
+      <h1>Robotics Portfolio</h1>
+      <p>
+        Welcome to my robotics portfolio! I specialize in robotics engineering, path planning,
+        machine learning for robotics applications, automation systems, and computer vision.
+        Explore my projects to see how I bring innovative ideas to life through advanced algorithms
+        and cutting-edge technologies.
+      </p>
+    </div>
+    <div class="intro-image">
+      <img src="WhatsApp-Image-2025-01-31-at-05.02.36_6dd71a82.jpg" alt="Profile Image">
+    </div>
+  </div>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Add a brief introduction about yourself here.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Sample Project</h3>
-                <p>Description of your project goes here.</p>
-                <p>Video: <a href="https://drive.google.com/file/d/1npWJFt64buGkgp3no9EBSzf5ieoFWe1b/view?usp=drive_link" target="_blank">View Project Video</a></p>
-                <p>Technologies used: HTML, CSS, JavaScript</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: [Your actual email address]</p>
-            <p>GitHub: <a href="https://github.com/AdharshAero">AdharshAero</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Adharsh Prasad Natesan. All rights reserved.</p>
-    </footer>
 </body>
 </html>
