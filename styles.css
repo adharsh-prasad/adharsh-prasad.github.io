@@ -1,11 +1,11 @@
 /* Example: style.css */
 
 body {
-  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a; /* Dark gray, almost black */
-  color: #ffffff; /* White text for contrast */
+  font-family: Arial, sans-serif;
 }
 
 .intro-section {
