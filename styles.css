@@ -15,7 +15,7 @@ body {
 }
 
 .intro-text {
-  max-width: 50%;
+  max-width: 70%;
   color: #ffffff;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .intro-image img {
-  width: 80%; /* Ensures the image fills the container */
+  width: 60%; /* Ensures the image fills the container */
   height: auto; /* Maintains aspect ratio */
   border-radius: 15px; /* Adds rounded corners */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
