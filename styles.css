@@ -17,7 +17,6 @@ body {
 .intro-text {
   max-width: 50%;
   color: #ffffff;
-  z-index: 1;
 }
 
 .intro-text h1 {
@@ -32,29 +31,35 @@ body {
 }
 
 .intro-image {
-  max-width: 75%;
+  max-width: 40%; /* Adjusts the container width */
 }
 
 .intro-image img {
-  width: 150%;
-  height: auto;
-  border-radius: 10px;
+  width: 100%; /* Ensures the image fills the container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 15px; /* Adds rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
 }
 
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
   .intro-section {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* Stacks text and image vertically */
     text-align: center;
     padding: 20px;
+    min-height: auto; /* Adjusts height for smaller screens */
   }
 
   .intro-text {
     max-width: 100%;
     margin-top: 20px;
+    text-align: center; /* Centers text */
+    padding-bottom: 20px; /* Adds spacing below text */
   }
 
   .intro-image {
-    max-width: 70%;
-    margin-bottom: 20px;
+    max-width: 60%; /* Adjusts image size for smaller screens */
+    margin-bottom: 20px; /* Adds spacing below the image */
+    text-align: center; /* Centers the image */
   }
 }
