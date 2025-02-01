@@ -8,14 +8,14 @@ body {
 .intro-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around; /* Adds spacing between text and image */
   padding: 50px;
-  background-color: #1a1a1a;
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d); /* Subtle gradient */
   min-height: 80vh;
 }
 
 .intro-text {
-  max-width: 70%;
+  max-width: 60%; /* Slightly reduces text width */
   color: #ffffff;
 }
 
@@ -31,14 +31,14 @@ body {
 }
 
 .intro-image {
-  max-width: 40%; /* Adjusts the container width */
+  max-width: 35%; /* Reduces image size slightly */
 }
 
 .intro-image img {
-  width: 100%; /* Ensures the image fills the container */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 15px; /* Adds rounded corners */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 /* Responsive Design for Smaller Screens */
