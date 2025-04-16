@@ -83,17 +83,25 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   cursor: pointer;
   overflow: hidden;
-  transition: max-height 0.5s ease;
-  height: 360px; /* collapsed height */
   width: 610px;
   display: flex;
   flex-direction: column;
+  transition: max-height 0.5s ease;
+  height: auto;
+  max-height: 360px;
 }
 
 .project-card.expanded {
   height: auto;         /* allow to grow with content */
   max-height: 900px;    /* but not more than 900px */
   overflow-y: auto;     /* add scroll if content exceeds 900px */
+}
+
+.card-front video.card-thumb {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  height: 200px;
 }
 
 .card-front, .card-back {
