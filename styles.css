@@ -68,3 +68,63 @@ body {
     text-align: center; /* Centers the image */
   }
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background: #222;
+  color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  cursor: pointer;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 250px; /* collapsed height */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card.expanded {
+  max-height: 900px; /* expanded height - adjust as needed */
+}
+
+.card-front, .card-back {
+  padding: 15px;
+}
+
+.card-front img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  height: 150px;
+}
+
+.card-back {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.project-card.expanded .card-back {
+  display: flex;
+}
+
+.project-card.expanded .card-front {
+  border-bottom: 1px solid #444;
+}
+
+.project-card a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
