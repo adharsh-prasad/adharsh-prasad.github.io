@@ -91,7 +91,9 @@ body {
 }
 
 .project-card.expanded {
-  max-height: 900px; /* expanded height - adjust as needed */
+  height: auto;         /* allow to grow with content */
+  max-height: 900px;    /* but not more than 900px */
+  overflow-y: auto;     /* add scroll if content exceeds 900px */
 }
 
 .card-front, .card-back {
