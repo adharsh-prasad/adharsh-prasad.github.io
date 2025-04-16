@@ -84,8 +84,8 @@ body {
   cursor: pointer;
   overflow: hidden;
   transition: max-height 0.5s ease;
-  max-height: 360px; /* collapsed height */
-  max-width: 610px;
+  height: 360px; /* collapsed height */
+  width: 610px;
   display: flex;
   flex-direction: column;
 }
