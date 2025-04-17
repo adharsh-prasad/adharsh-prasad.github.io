@@ -83,9 +83,9 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
 }
 
 .project-card {
@@ -97,12 +97,13 @@ body {
   overflow: hidden;
   transition: max-height 0.5s ease;
   height: 360px;
-  width: 100%; /* Let it grow/shrink inside the grid */
-  max-width: 600px; /* Optional: cap the width */
+  width: 100%;
+  max-width: 500px;    /* Not too wide, not too narrow */
   display: flex;
   flex-direction: column;
-  margin: 0 auto; /* Center it inside its grid cell */
+  margin: auto;        /* Center within grid column */
 }
+
 
 .project-card.expanded {
   height: auto;         /* allow to grow with content */
