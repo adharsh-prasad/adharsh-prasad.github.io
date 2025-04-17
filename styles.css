@@ -7,19 +7,21 @@ body {
 }
 
 .intro-section {
-  display: flex; /* Enables flexbox */
-  flex-direction: column; /* Stacks items vertically */
-  align-items: center; /* Centers items horizontally */
-  justify-content: center; /* Centers items vertically */
-  text-align: center; /* Centers text alignment */
-  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 40px 60px;
   background-color: #1a1a1a;
-  min-height: 100vh; /* Makes the section take up full viewport height */
+  min-height: 50vh;
 }
 
 .intro-text {
-  max-width: 70%; /* Limits text width for readability */
-  color: #ffffff; /* White text for contrast */
+  flex: 1;
+  max-width: 60%;
+  color: #ffffff;
+  padding-right: 30px;
 }
 
 .intro-text h1 {
@@ -34,17 +36,16 @@ body {
 }
 
 .intro-image {
-  max-width: 40%; /* Limits image width to prevent it from being too large */
-  margin-top: 20px; /* Adds spacing between text and image */
+  flex: 0 0 200px;
+  max-width: 200px;
 }
 
 .intro-image img {
-  width: 100%; /* Makes the image responsive within its container */
-  height: auto; /* Maintains aspect ratio of the image */
-  border-radius: 15px; /* Adds rounded corners to the image */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
