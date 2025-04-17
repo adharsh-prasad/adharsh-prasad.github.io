@@ -42,7 +42,7 @@ body {
 
 .intro-image {
   flex: 1;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   justify-content: center;
 }
