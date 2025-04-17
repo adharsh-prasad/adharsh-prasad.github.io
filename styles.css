@@ -95,12 +95,13 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   cursor: pointer;
   overflow: hidden;
-  width: 610px;
+  transition: max-height 0.5s ease;
+  height: 360px;
+  width: 100%; /* Let it grow/shrink inside the grid */
+  max-width: 600px; /* Optional: cap the width */
   display: flex;
   flex-direction: column;
-  transition: max-height 0.5s ease;
-  height: auto;
-  max-height: 360px;
+  margin: 0 auto; /* Center it inside its grid cell */
 }
 
 .project-card.expanded {
