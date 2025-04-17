@@ -11,41 +11,43 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  text-align: left;
-  padding: 40px 60px;
+  padding: 60px 80px;
   background-color: #1a1a1a;
-  min-height: 50vh;
+  min-height: auto;
 }
 
 .intro-text {
-  flex: 1;
-  max-width: 60%;
+  flex: 3;
+  max-width: 75%;
   color: #ffffff;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 .intro-text h1 {
-  font-size: 2.5rem; /* Large font size for title */
-  margin-bottom: 20px; /* Space below the title */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .intro-text p {
-  font-size: 1.2rem; /* Medium font size for paragraph text */
-  line-height: 1.6; /* Adds spacing between lines for readability */
-  color: #e0e0e0; /* Light gray color for paragraph text */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
 }
 
 .intro-image {
-  flex: 0 0 200px;
+  flex: 1;
   max-width: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .intro-image img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
