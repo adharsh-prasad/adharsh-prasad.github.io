@@ -90,8 +90,12 @@ body {
 }
 
 .projects-grid .center-last:nth-child(10) {
-  grid-column: 2 / 3; /* Centers it in a 3-column grid */
+  grid-column: 2 / 3;
+  justify-self: center;
+  width: 100%;
+  max-width: 620px;
 }
+
 
 .project-card {
   background: #222;
