@@ -36,7 +36,7 @@ body {
 
 .intro-image {
   flex: 1;
-  max-width: 200px;
+  max-width: 280px; /* from 200px */
   display: flex;
   justify-content: center;
 }
@@ -44,9 +44,11 @@ body {
 .intro-image img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 0; /* remove rounding if you want it totally flat */
+  box-shadow: none; /* remove the shadow */
+  background: none; /* just in case */
 }
+
 
 
 /* Responsive Design for Smaller Screens */
