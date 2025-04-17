@@ -96,7 +96,10 @@ body {
   width: 100%;              
 }
 
-
+.project-card.invisible {
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .project-card {
   background: #222;
