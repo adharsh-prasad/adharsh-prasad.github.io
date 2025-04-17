@@ -90,11 +90,12 @@ body {
 }
 
 .projects-grid .center-last:nth-child(10) {
-  grid-column: 2 / 3;
-  justify-self: center;
-  width: 100%;
-  max-width: 300px;
+  grid-column: 1 / -1;       
+  place-self: center;       
+  max-width: 300px;          
+  width: 100%;              
 }
+
 
 
 .project-card {
