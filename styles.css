@@ -162,15 +162,17 @@ body {
 
 .timeline-section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   color: #eee;
+  text-align: left; /* make heading and content left-aligned */
 }
 
 .timeline-section h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
   font-size: 2rem;
+  padding-left: 20px;
 }
 
 .timeline {
@@ -178,28 +180,34 @@ body {
   flex-direction: column;
   position: relative;
   border-left: 3px solid #444;
-  padding-left: 30px;
+  padding-left: 40px; /* increased to give room for icon */
 }
 
 .timeline-item {
   position: relative;
   margin-bottom: 40px;
+  padding-left: 10px;
 }
 
 .timeline-item .icon {
   position: absolute;
-  left: -25px;
+  left: -35px;
   top: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   background: #1a1a1a;
-  padding: 4px;
+  padding: 6px;
   border-radius: 50%;
   border: 2px solid #888;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .timeline-item .content h3 {
   margin: 0 0 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #fff;
 }
 
@@ -217,4 +225,5 @@ body {
 .timeline-item .content a:hover {
   text-decoration: underline;
 }
+
 
