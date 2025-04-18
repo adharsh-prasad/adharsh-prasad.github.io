@@ -226,29 +226,7 @@ body {
   text-decoration: underline;
 }
 
-.skills-section {
-  padding: 60px 20px;
-  text-align: center;
-  background: #111;
-  color: #fff;
-}
-
-.skills-section h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-/* 💡 THE IMPORTANT PART */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.skill-item {
+.skill-card {
   width: 120px;
   height: 120px;
   background: #1f1f1f;
@@ -261,18 +239,18 @@ body {
   transition: transform 0.3s ease;
 }
 
-.skill-item:hover {
+.skill-card:hover {
   transform: scale(1.05);
 }
 
-.skill-item img {
+.skill-card img {
   width: 50px;
   height: 50px;
   object-fit: contain;
   margin-bottom: 10px;
 }
 
-.skill-item p {
+.skill-card p {
   margin: 0;
   font-size: 0.9rem;
 }
