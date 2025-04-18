@@ -243,8 +243,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 30px;
-  justify-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 
 .skill-card {
   background: #1a1a1a;
