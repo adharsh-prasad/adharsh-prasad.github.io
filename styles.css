@@ -251,7 +251,6 @@ body {
 .skill-item {
   width: 120px;
   height: 120px;
-  background: #1f1f1f;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(255,255,255,0.05);
   display: flex;
@@ -354,7 +353,6 @@ body {
 .contact-section {
   text-align: center;
   padding: 60px 20px;
-  background: #111;
   color: #fff;
 }
 
