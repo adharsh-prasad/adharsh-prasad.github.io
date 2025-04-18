@@ -388,5 +388,42 @@
       </div>
     </div>
   </section>
+  <section class="certificate-section">
+    <h2>Certificates</h2>
+    <div class="certificate-grid">
+      <div class="certificate-card" onclick="openModal('cert1')">
+        <img src="certificates/python-cert-thumb.jpg" alt="Python Certificate" />
+        <p>Python Basics</p>
+      </div>
+      <div class="certificate-card" onclick="openModal('cert2')">
+        <img src="certificates/robotics-cert-thumb.jpg" alt="Robotics Certificate" />
+        <p>Intro to Robotics</p>
+      </div>
+    </div>
+  </section>
+  <div id="certModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <p id="modalCaption"></p>
+  </div>
+  <script>
+    function openModal(certId) {
+      const modal = document.getElementById("certModal");
+      const modalImg = document.getElementById("modalImage");
+      const caption = document.getElementById("modalCaption");
+
+      if (certId === "cert1") {
+        modalImg.src = "certificates/python-cert-full.jpg";
+        caption.textContent = "Python Basics Certificate - Coursera";
+      } else if (certId === "cert2") {
+        modalImg.src = "certificates/robotics-cert-full.jpg";
+        caption.textContent = "Intro to Robotics - NPTEL";
+      }
+      modal.style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("certModal").style.display = "none";
+    }
+  </script>
 </body>
 </html>
