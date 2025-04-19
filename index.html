@@ -367,7 +367,7 @@
         <img src="relevant-files/Data Science.png" alt="Data Science Certificate" />
         <p>Data Science</p>
       </div>
-      <div class="certificate-card" onclick="openModal('cert2')">
+      <div class="certificate-card" onclick="openModal('cert3')">
         <img src="relevant-files/Deep Learning.png" alt="Deep Learning Certificate" />
         <p>Deep Learning Specialization</p>
       </div>
@@ -401,11 +401,14 @@
       const caption = document.getElementById("modalCaption");
 
       if (certId === "cert1") {
-        modalImg.src = "certificates/python-cert-full.jpg";
-        caption.textContent = "Python Basics Certificate - Coursera";
+        modalImg.src = "relevant-files/Machine Learning.png";
+        caption.textContent = "Machine Learning Certificate - Coursera";
       } else if (certId === "cert2") {
-        modalImg.src = "certificates/robotics-cert-full.jpg";
-        caption.textContent = "Intro to Robotics - NPTEL";
+        modalImg.src = "relevant-files/Data Science.png";
+        caption.textContent = "Data Science Certificate - Coursera";
+      } else if (certId === "cert3") {
+        modalImg.src = "relevant-files/Deep Learning.png";
+        caption.textContent = "Deep Learning Certificate - Coursera";
       }
       modal.style.display = "block";
     }
