@@ -270,7 +270,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* 💡 THE IMPORTANT PART */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -297,15 +296,32 @@ body {
 }
 
 .skill-item img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
 }
 
 .skill-item p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.skill-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .certificate-section {
