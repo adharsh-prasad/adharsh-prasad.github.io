@@ -189,6 +189,42 @@ body {
   text-decoration: underline;
 }
 
+.contributions-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  color: #fff;
+  text-align: left;
+}
+
+.contributions-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.conference-entry {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.conference-entry h3 {
+  margin-top: 0;
+}
+
+.conference-entry p {
+  margin: 8px 0;
+}
+
+.conference-entry .note {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
 .timeline-section {
   padding: 60px 20px;
   max-width: 900px;
