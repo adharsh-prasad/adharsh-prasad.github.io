@@ -89,29 +89,6 @@ body {
   padding: 40px 0px;
 }
 
-@media screen and (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 20px;
-  }
-
-  .project-card {
-    height: auto;
-    aspect-ratio: auto;
-  }
-
-  .card-thumb,
-  .card-front video.card-thumb,
-  .card-front img {
-    height: auto;
-    max-height: 200px;
-  }
-
-  .card-info {
-    padding: 10px;
-  }
-}
-
 .project-card.invisible {
   visibility: hidden;
   pointer-events: none;
@@ -211,6 +188,33 @@ body {
 .project-card a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important; /* Force single column */
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 100% !important;   /* Full width */
+    height: auto !important;  /* Let it grow naturally */
+    aspect-ratio: unset !important; /* Remove forced square ratio */
+  }
+
+  .card-thumb,
+  .card-front video.card-thumb,
+  .card-front img {
+    height: auto !important;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .card-info {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
 
 .contributions-section {
   padding: 60px 20px;
