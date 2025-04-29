@@ -92,8 +92,26 @@ body {
 @media screen and (max-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+
+  .project-card {
+    height: auto;
+    aspect-ratio: auto;
+  }
+
+  .card-thumb,
+  .card-front video.card-thumb,
+  .card-front img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .card-info {
+    padding: 10px;
   }
 }
+
 .project-card.invisible {
   visibility: hidden;
   pointer-events: none;
