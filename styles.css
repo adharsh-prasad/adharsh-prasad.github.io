@@ -202,21 +202,27 @@ body {
   backdrop-filter: blur(8px);
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .insta-modal.active {
   display: flex;
+  overflow: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .modal-box {
-  background: #222;
+  background: rgba(34, 34, 34, 0.95);
   color: #eee;
-  max-width: 80vw;
-  max-height: 90vh;
+  width: 70vw;
+  max-height: 85vh;
   overflow-y: auto;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  box-shadow: 0 0 30px rgba(0,0,0,0.9);
   position: relative;
   font-size: 0.95rem;
 }
@@ -297,6 +303,7 @@ body {
     font-size: 1.1rem;
   }
 }
+
 
 @media screen and (max-width: 768px) {
   .projects-grid {
