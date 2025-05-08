@@ -232,14 +232,18 @@ body.modal-open {
 .modal-box h2 {
   margin-top: 0;
   font-size: 1.8rem;
+  text-align: center;         /* ✅ Center the title */
+  margin-bottom: 20px;        /* Optional spacing */
 }
 
 .modal-box img,
 .modal-box video {
   width: 100%;
-  border-radius: 10px;
-  margin: 20px 0;
-  object-fit: contain;
+  height: auto;
+  max-height: 500px;
+  margin-top: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6); /* makes it stand out */
 }
 
 .modal-box section {
@@ -249,8 +253,32 @@ body.modal-open {
 .modal-box section h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  border-bottom: 1px solid #444;
-  padding-bottom: 5px;
+  font-weight: 600;
+  color: #1e90ff;
+}
+
+.modal-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-column {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-media {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 .close-btn {
@@ -268,6 +296,14 @@ body.modal-open {
 }
 
 @media screen and (max-width: 768px) {
+  .modal-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-column {
+    width: 100%;
+  }
   .projects-grid {
     grid-template-columns: 1fr !important;
     padding: 10px;
