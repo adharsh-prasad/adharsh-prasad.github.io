@@ -212,6 +212,8 @@ body {
 
 body.modal-open {
   overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 .modal-box {
@@ -232,7 +234,8 @@ body.modal-open {
   font-size: 1.8rem;
 }
 
-.modal-box img {
+.modal-box img,
+.modal-box video {
   width: 100%;
   border-radius: 10px;
   margin: 20px 0;
@@ -303,7 +306,6 @@ body.modal-open {
     font-size: 1.1rem;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .projects-grid {
