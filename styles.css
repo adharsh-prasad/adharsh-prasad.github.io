@@ -281,6 +281,20 @@ body.modal-open {
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
+.text-content {
+  min-height: 80px; /* Adjust based on your content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.media-content {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  width: 100%;
+}
+
 .close-btn {
   position: absolute;
   top: 10px;
