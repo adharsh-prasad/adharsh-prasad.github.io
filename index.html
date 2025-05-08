@@ -520,5 +520,23 @@
       document.getElementById("certModal").style.display = "none";
     }
   </script>
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+
+    window.addEventListener('click', function (e) {
+      const modals = document.querySelectorAll('.insta-modal');
+      modals.forEach(modal => {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
