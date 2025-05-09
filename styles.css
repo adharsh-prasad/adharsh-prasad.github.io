@@ -282,10 +282,14 @@ body.modal-open {
 }
 
 .text-content {
-  margin-top: 5px;
+  min-height: 50px;  /* 🔧 same height for all, but not too tall */
   padding: 0;
-  display: block;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 
 .media-content {
