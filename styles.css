@@ -219,7 +219,7 @@ body.modal-open {
 .modal-box {
   background: rgba(34, 34, 34, 0.95);
   color: #eee;
-  width: 70vw;
+  width: 80vw;
   max-height: 85vh;
   overflow-y: auto;
   border-radius: 12px;
@@ -252,7 +252,7 @@ body.modal-open {
 
 .modal-box section h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-weight: 600;
   color: #1e90ff;
 }
