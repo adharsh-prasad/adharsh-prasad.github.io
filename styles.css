@@ -282,7 +282,11 @@ body.modal-open {
 }
 
 .text-content {
-  margin-top: 8px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .media-content {
