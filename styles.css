@@ -252,7 +252,7 @@ body.modal-open {
 
 .modal-box section h3 {
   font-size: 1.2rem;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   font-weight: 600;
   color: #1e90ff;
 }
